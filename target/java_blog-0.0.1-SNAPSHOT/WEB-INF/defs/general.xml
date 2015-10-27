@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="common" template="/WEB-INF/layout/classic.jsp">
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<definition name="index" extends="common">
+		<put-attribute name="title" value="Java Blog Aggregator" />
+		<put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+		<put-attribute name="current" value="index" />
+	
+	</definition>
+	
+	<definition name="users" extends="common">
+		<put-attribute name="title" value="users" />
+		<put-attribute name="body" value="/WEB-INF/jsp/users.jsp" />
+		<put-attribute name="current" value="users" />
+	
+	</definition>
+	
+	
+	<definition name="user-detail" extends="common">
+		<put-attribute name="title" value="user details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-detail.jsp" />
+		<put-attribute name="current" value="users" />
+	
+	</definition>
+	
+	
+	<definition name="user-register" extends="common">
+		<put-attribute name="title" value="user registration" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user-register.jsp" />
+		<put-attribute name="current" value="register" />
+	
+	</definition>
+
+
+	<definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+		<put-attribute name="current" value="login" />
+	
+	</definition>
+ 
+	
+	  
+   <definition name="home" template="/WEB-INF/layout/Homeclassic.jsp">
+		<put-attribute name="title" value="Forum Page" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+		<put-attribute name="current" value="home" />
+	</definition>
+	
+	<definition name="user_Question" extends="common">
+		<put-attribute name="title" value="Your Questions" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user_Question.jsp" />
+		<put-attribute name="current" value="user_Question" />
+	
+	</definition>
+	
+	<definition name="questions" extends="common">
+		<put-attribute name="title" value="Questions" />
+		<put-attribute name="body" value="/WEB-INF/jsp/question.jsp" />
+		<put-attribute name="current" value="questions" />
+	
+	</definition>
+	
+	
+	<definition name="tutorial" extends="common">
+		<put-attribute name="title" value="Tutorials" />
+		<put-attribute name="body" value="/WEB-INF/jsp/tutorial.jsp" />
+		<put-attribute name="current" value="tutorial" />
+	
+	</definition>
+	
+	<definition name="tutorialPage" extends="common">
+		<put-attribute name="title" value="Tutorials" />
+		<put-attribute name="body" value="/WEB-INF/jsp/tutorialsPage.jsp" />
+		<put-attribute name="current" value="tutorialPage" />
+	
+	</definition>
+	
+	
+	<definition name="userBlog" extends="common">
+		<put-attribute name="title" value="Tutorials" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userBlog.jsp" />
+		<put-attribute name="current" value="userBlog" />
+	
+	</definition>
+	<definition name="userBlogPage" extends="common">
+		<put-attribute name="title" value="Tutorials" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userBlogPage.jsp" />
+		<put-attribute name="current" value="userBlogPage" />
+	
+	</definition>
+	
+	<definition name="userPanel" extends="common">
+		<put-attribute name="title" value="Your Panel" />
+		<put-attribute name="body" value="/WEB-INF/jsp/userPanel.jsp" />
+		<put-attribute name="current" value="userPanel" />
+	
+	</definition>
+</tiles-definitions>
